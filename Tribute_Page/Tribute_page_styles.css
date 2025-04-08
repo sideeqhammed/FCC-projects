@@ -1,0 +1,25 @@
+body {
+background-color: #F0FFFF
+}
+main {
+  max-width: 90%;
+  margin: 5em auto;
+  padding: 1em;
+  background: #ececec
+}
+h1,p {
+  text-align: center;
+}
+img {
+  max-width: 100%;
+  width: 800px;
+  height: auto;
+  display: block;
+  margin: 5px auto;
+}
+#img-caption {
+  text-align: center;
+}
+li {
+  margin: 10px 2px;
+}
