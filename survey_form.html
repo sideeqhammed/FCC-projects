@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="survey_form_styles.css" />
+  </head>
+  <body>
+    <main>
+      <h1 id="title">Survey Form</h1>
+      <p id="description">A Survey on Programmers</p>
+      <form id="survey-form">
+        <fieldset>
+          <label for="name" id="name-label" >Name: <input id="name" type="text" required placeholder="Enter your name" ></input></label>
+          <label for="email" id="email-label" >E-mail: <input id="email" type="email" required placeholder="Enter your E-mail" ></input></label>
+          <label for="number" id="number-label" >Age: <input id="number" type="number" min="12" max="100" required placeholder="Age"></input></label>
+        </fieldset>
+        <fieldset>
+          <label> How did you learn programming
+            <select id="dropdown">
+              <option value="">(Choose one)</option>
+              <option value="1">Self-taught</option>
+              <option value="2">Courses</option>
+              <option value="3">Computer-science Degree</option>
+              <option value="4">Bootcamps</option>
+              <option value="5">Others</option>
+            </select>
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>What level are you at?</legend>
+          <label for="novice-level"><input id="novice-level" type="radio" name="level" value="novice" checked /> Novice</label>
+          <label for="intermediate-level"><input id="intermediate-level" type="radio" name="level" value="intermediate" /> Intermediate</label>
+          <label for="professional-level"><input id="professional-level" type="radio" name="level" value="professional" /> Professional</label>
+        </fieldset>
+        <fieldset>
+          <legend>Which languages do know? </legend>
+          <label for="python">
+            <input id="python" type="checkbox" value="python" ></input> Python
+          </label>
+          <label for="javaScript">
+            <input id="javaScript" type="checkbox" value="javascript" ></input> JavaScript
+          </label>
+          <label for="c">
+            <input id="c" type="checkbox" value="c" ></input> C
+          </label>
+          <label for="c++">
+            <input id="c++" type="checkbox" value="c++" ></input> C++
+          </label>
+          <label for="java">
+            <input id="java" type="checkbox" value="java" ></input> Java
+          </label>
+          <label for="others">
+            <input id="others" type="checkbox" value="others" ></input> Others
+          </label>
+          <label for="more-others">If others specify: <textarea id="more-others" rows="3" cols="35" ></textarea></label>
+        </fieldset>
+        <input type="submit" value="Submit" id="submit" />
+      </form>
+    </main>
+  </body>
+</html>
+
